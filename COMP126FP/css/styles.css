@@ -1,0 +1,835 @@
+body { 
+  margin: 0px;
+  color: white;
+  font: 13vw;
+  font-family: 'Bebas Neue', Regular400;
+}
+
+.btext {
+  font-size: 3vw;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  margin-top: 2%;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+h1 { 
+  font-family: 'Bebas Neue', Regular400;
+  margin: 0%;
+}
+
+
+h2 { 
+  margin: 1%;
+  margin-left: 0%;
+}
+
+h2 { 
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.75rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(150px, auto);
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+  }
+
+  .flex-container {
+    display: flex;
+    grid-column: 2/5;
+  }
+
+
+  .header-text { 
+    padding-left: 10%;
+    margin: 0;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+    /* align-self: flex-start; */
+
+  }
+
+.hero { 
+  display: flex;
+  justify-content: space-between;
+  /* height: 20rem; */
+  flex-direction: column;
+  margin-bottom: 20px;
+
+}
+
+.boondockstext {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.strippedimages { 
+  background-color: white;
+  width: 85vw;
+  height: 35vw;
+  display: flex;
+  align-self: flex-end;
+  background-repeat: no-repeat;
+  /* background-size: 100vw; */
+}
+
+.intro { 
+  font-family: 'Bebas Neue', Regular400;
+  color: white;
+  font-size: 15vw;
+  margin-left: .65rem;
+  
+}
+
+#tdlogo {
+  width: 12rem;
+  /* margin-left: 1rem; */
+  margin-top: 1rem;
+}
+
+
+#tdlogo {
+  grid-column: 1/5;
+  margin-bottom: 1rem;
+  justify-self: center;
+  /* margin-top: 6rem;
+  margin-bottom: 4rem; */
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
+}
+
+#tdlogo:after{
+animation: rotating 12s linear infinite;
+content: "";
+display: block;
+}
+
+#contactlogo {
+  grid-column: 1/5;
+  justify-self: center;
+   width: 30vw;
+   margin-top: 3rem;
+   margin-bottom: 4rem;
+   padding: 0;
+   animation: rotate 2s linear infinite;
+}
+
+/* img {
+  width: 100vw;
+  border-radius: 15px;
+  display: inline-flex;
+  padding: .5rem;
+} */
+
+.mybackground {
+  height: 100%;
+  width: 100%;
+
+}
+
+  .pictures { 
+    background-color: white;
+    grid-column: 1/5;
+    /* padding: 2em; */
+    justify-items: center;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    overflow: hidden
+  }
+
+  .paragraph-box {background-color: darkgrey;
+  grid-column: 1/5;
+  padding: 2em;}
+
+  /* navigation bar effects */
+  .menubar ul {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 5%;
+  padding-right: 2%;
+  padding-bottom: 15%;
+}
+
+  .menubar li {
+    display: inline;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .first-paragraph {
+    margin-bottom: 3rem;
+  }
+
+  /* gives menubar color and background */
+  .menubar ul li a {
+    text-align: ce;
+    padding: .1em 0;
+    text-decoration: none;
+    /* background-color: black; */
+    color: white;
+    border-radius: 8px;
+  }
+
+.menubar a:active{
+    color: darkgray;
+}
+
+  .menubar ul li a:hover,
+  .menubar ul li a:focus {
+      color: #F80000;
+  }
+  /* menubar effects ends */
+
+  .footer {
+    grid-column: 1/5;
+    background-color: black;
+  }
+
+  .footertext { 
+    color:white;
+    text-align: center;
+    padding: 60px;
+    margin: 0;
+  }
+
+  #shape1, #shape2, #shape3, #shape4, #shape5, #shape6{
+    background-color: black;
+    width: 3vw;
+    height: 100%;
+  }
+
+  #shape1 {
+    margin-left: 1%;
+  }
+
+  #shape2 {
+    margin-left: 3%;
+  }
+
+  #shape3 {
+    margin-left: 6%;
+  }
+
+  #shape4 {
+    margin-left: 8%;
+  }
+
+  #shape5 {
+    margin-left: 10%;
+  }
+
+  #shape6 {
+    margin-left: 12%;
+  }
+
+
+
+
+
+
+/* Contact Page CSS */
+
+
+#contactbody { 
+  margin: 0px;
+  color: white;
+  font: 13vw;
+  font-family: 'Bebas Neue', Regular400;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0px;
+  padding: 0px;
+}
+
+body.header-box{ 
+ grid-column: 1/5;
+ text-align: center;
+ 
+}
+
+
+.header-box img { 
+  display: inline;
+  width: 18rem;
+  text-shadow: 2px 2px 5px white;
+  /* padding-top: 1rem; */
+  padding: 1.5rem;
+
+}
+
+.middle {
+  background-color: black;
+  grid-column: 1/5;
+}
+
+label { 
+  display: block;
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+.signup {
+  max-width: 85vw;
+  margin: 10px auto;
+  padding: 10px 20px;
+  /* background: rgb(24, 24, 24); */
+  background: black;
+  border-radius: 5px;
+}
+
+textarea, input {
+  width: -webkit-fill-available;
+  padding: 15px;
+  background-color: white;;
+}
+
+.content {
+padding-bottom: 7vw;
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(0, 0, 0, 0.37)
+}
+
+.contactbuttons li a, #submit {
+  color: white;
+  background-color: rgb(24, 24, 24);
+  cursor: pointer;
+  border: none;
+  font-size: 1.25rem;
+  font-family: 'Bebas Neue', Regular400;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 25px;
+  transition: background 1s;
+}
+
+.contactbuttons li a:hover, li:focus {
+  background-color: white;
+  /* color: black; */
+}
+
+
+#submit {
+  background-image: linear-gradient(-90deg, #F80000 10% 50%, rgb(24, 24, 24)10% 50%);
+  transition: background-position 500ms ease;
+  background-position: 0% 0%;
+ background-size: 200%;
+}
+
+#submit:hover {
+  background-position: 100% 0%;
+  /* color: black; */
+}
+
+
+.contactbuttons ul {
+  text-align: center;
+  width: 100%;
+  /* padding-top: 2rem; */
+  grid-column: 1/5;
+}
+
+.contactbuttons li {
+  display: inline;
+  text-align: center;
+  width: 20vw;
+}
+
+.dropdown {
+  flex-direction: row;
+  padding: 0;
+  margin-top: 8vw;
+  margin-bottom: 5vw;
+}
+
+
+/* gives menubar color and background */
+.contactbuttons ul li a {
+  text-decoration: none;
+  color: white;
+ 
+}
+
+.contactbuttons ul li{
+  margin: 1rem;
+ 
+}
+
+.contactbuttons a:active{
+  color: darkgray;
+}
+
+.contactbuttons ul li a:hover,
+.contactbuttons ul li a:focus {
+  background-color:white;
+  color: black;
+}
+
+input:hover, 
+input:focus, textarea:hover, textarea:focus {
+border: 4px solid #F80000;
+}
+
+input, textarea, select {
+ color: black;
+ outline: 0;
+ font-family: 'Roboto', sans-serif;
+ border-radius: 2px;
+}
+
+/* menubar effects ends */
+
+/* .footer {
+  grid-column: 1/5;
+  /* background-color: white; */
+}
+
+/* .footertext { 
+  color:white;
+  text-align: center;
+  padding: 30px;
+  margin: 0;
+} */ 
+
+
+
+/* creative CSS */
+
+
+#contactbody { 
+  margin: 0px;
+  color: white;
+  font: 13vw;
+  font-family: 'Bebas Neue', Regular400;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header-box{ 
+ grid-column: 1/5;
+ /* text-align: center; */
+ 
+}
+
+
+.header-box img { 
+  display: inline;
+  width: 18rem;
+  text-shadow: 2px 2px 5px white;
+  /* padding-top: 1rem; */
+  padding: 1.5rem;
+
+}
+
+.middle {
+  /* background-color: #222222; */
+  grid-column: 1/5;
+}
+
+label { 
+  display: block;
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+.signup {
+  max-width: 85vw;
+  margin: 10px auto;
+  padding: 10px 20px;
+  /* background: rgb(24, 24, 24); */
+  background: black;
+  border-radius: 5px;
+}
+
+textarea, input {
+  width: -webkit-fill-available;
+  padding: 15px;
+  background-color: white;;
+}
+
+.content {
+padding-bottom: 7vw;
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(0, 0, 0, 0.37)
+}
+
+.contactbuttons li a, #submit {
+  color: white;
+  background-color: rgb(24, 24, 24);
+  cursor: pointer;
+  border: none;
+  font-size: 1.25rem;
+  font-family: 'Bebas Neue', Regular400;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 25px;
+  transition: background 1s;
+}
+
+.contactbuttons li a:hover, li:focus {
+  background-color: white;
+  /* color: black; */
+}
+
+
+#submit {
+  background-image: linear-gradient(-90deg, #F80000 10% 50%, rgb(24, 24, 24)10% 50%);
+  transition: background-position 500ms ease;
+  background-position: 0% 0%;
+ background-size: 200%;
+}
+
+#submit:hover {
+  background-position: 100% 0%;
+  /* color: black; */
+}
+
+
+.contactbuttons ul {
+  text-align: center;
+  width: 100%;
+  /* padding-top: 2rem; */
+  grid-column: 1/5;
+}
+
+.contactbuttons li {
+  display: inline;
+  text-align: center;
+  width: 20vw;
+}
+
+.dropdown {
+  flex-direction: row;
+  padding: 0;
+  margin-top: 8vw;
+  margin-bottom: 5vw;
+}
+
+
+/* gives menubar color and background */
+.contactbuttons ul li a {
+  text-decoration: none;
+  color: white;
+ 
+}
+
+.contactbuttons ul li{
+  margin: 1rem;
+ 
+}
+
+.contactbuttons a:active{
+  color: darkgray;
+}
+
+.contactbuttons ul li a:hover,
+.contactbuttons ul li a:focus {
+  background-color:white;
+  color: black;
+}
+
+input:hover, 
+input:focus, textarea:hover, textarea:focus {
+border: 4px solid #F80000;
+}
+
+input, textarea, select {
+ color: black;
+ outline: 0;
+ font-family: 'Roboto', sans-serif;
+ border-radius: 2px;
+}
+
+#creativebody{
+  background-color: black;
+}
+
+/* menubar effects ends */
+
+/* .footer {
+  grid-column: 1/5;
+  /* background-color: white; */
+}
+
+/* .footertext { 
+  color:white;
+  text-align: center;
+  padding: 30px;
+  margin: 0;
+} */ 
+
+
+
+
+
+/* Work HTML CSS */
+
+
+.wheader {
+display: grid;
+grid-column: 1/5;
+justify-self: center;
+}
+
+.mywork { 
+  grid-column: 1/5;
+  margin: 0;
+  text-align: center;
+}
+
+.round a {
+display: inline-block;
+color: white;
+}
+
+.round:hover{
+  background-color: #F80000;
+} 
+
+.round {
+ border-radius: 50%;
+ text-decoration: none;
+ padding: 20px 45px;
+ background-color: white;
+ font-size: 3rem;
+}
+
+#backbutton {
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+
+
+div.gallery {
+  border: 1px solid white;
+}
+
+div.gallery:hover {
+  border: 1px solid #F80000;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  font-size: 1rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.art{
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .art {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .art {
+    width: 100%;
+  }
+}
+
+.summary:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+@media screen and (min-width: 700px) {
+  .menubar ul li {
+      width: 15%
+  }
+  .menubar li {
+      padding: 2rem; 
+      cursor: pointer;
+      text-align: center;
+    }
+  
+    section {
+      width: 70%;
+      margin: 0 auto;
+  
+  }    
+
+
+  .welcometext {
+      display: none
+  }
+ 
+
+
+
+
+
+  @media screen and (min-width: 1000px) {
+
+    body { 
+      font: 20vw;
+    }
+
+    .btext {
+      font-size: 1vw;
+    }
+    
+    .grid-container {
+      grid-auto-rows: minmax(100px, auto);
+      margin: 0px;
+      padding: 0px;
+    }
+    
+    h1 { 
+      margin: 0%;
+      font-size: 2rem;
+    }
+
+    h2 { 
+      margin: 1%;
+      margin-left: 0%;
+      font-size: 1.5rem;
+    }
+
+    .hero { 
+      flex-direction: row !important;
+      justify-content: space-between;
+      margin-bottom: 4vw;
+    } 
+
+    .intro { 
+      font-size: 4.5vw;
+      margin: 0;
+
+
+      
+    }
+
+      .header-text {
+        padding-left: 5%;
+        margin: 0%;
+        margin-bottom: 1vw;
+        order: 1;
+  
+    
+      }
+
+      .strippedimages {
+        align-self: flex-end;
+        /* flex-direction: row;  */
+        /* width: 20vw; */
+        height: 10vw;
+        order: 2;
+        width: 50vw;
+      }
+
+      .header-box {
+        font-size: 1rem;
+      }
+
+      header {
+        padding-top: 2%;
+        padding-right: 2%;
+        padding-bottom: 2%;
+        font-size: 1.25vw;
+      }
+      
+
+      .pictures { 
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        padding: 0;
+      }
+
+     img { 
+      width: 20vw;
+      padding: 0%;
+    }
+    .paragraph-box {
+      display: flex;
+      font-size: 1rem;
+      padding: 1rem;
+      padding-bottom: 4rem;
+    }
+
+    .first-paragraph, .second-paragraph { 
+      /* padding: 3rem; */
+      padding-left: 4vw;
+      padding-right: 5vw;
+      font-size: 1rem;
+      margin: 0;
+    }
+
+  
+    #shape1, #shape2, #shape3, #shape4, #shape5, #shape6{
+      background-color: black);
+      width: 2vw;
+      height: 100%;
+    }
+
+    #contactlogo {
+      width: 15vw;
+    }
+
+  }
+    
